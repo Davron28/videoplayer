@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеоплеер</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="player">
+        <video src="video/asd.mp4" class="video" poster="img/madara.webp"></video>
+        <button class="play__circle"><i class="far fa-play-circle"></i></button>
+        <div class="panel">
+            <div class="panel__line">
+                <div class="panel__line-current"></div>
+            </div>
+            <div class="panel__left">
+                <button class="play"><i class="fas fa-play"></i></button>
+                <div class="volume">
+                    <button class="mute"><i class="fas fa-volume-up"></i></button>
+                    <input type="range" class="volume__slider" value="100">
+                </div>
+                <div class="video__time">
+                    <p class="time__current">0:00</p>
+                    /
+                    <p class="time__duration">0:00</p>
+                </div>
+            </div>
+            <div class="panel__right">
+                <select name="" id="" class="video__speed">
+                    <option value="0.25">0.25</option>
+                    <option value="0.5">0.5</option>
+                    <option value="0.75">0.75</option>
+                    <option value="1" selected>Обычная</option>
+                    <option value="1.25">1.25</option>
+                    <option value="1.5">1.5</option>
+                    <option value="1.75">1.75</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="fullscreen"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
